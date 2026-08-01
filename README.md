@@ -17,6 +17,8 @@ Repositório de dotfiles e configurações pessoais usados por @elppans ("ml4w")
 
 ## Como usar (rápido)
 
+- **Sincronizar o repositório**
+
 1. Crie o subdiretório com o nome .dotfiles em seu `"$HOME"`:
 
 ```bash
@@ -39,6 +41,16 @@ cd "$HOME/.dotfiles/ml4w.mydotfiles"
 
 O Script sincroniza o diretório `~/.mydotfiles` para o repositório git em `~/.dotfiles/ml4w.mydotfiles`.
 >O Script não irá sincronizar o diretório `backup` e nem o diretório `com.ml4w.dotfiles.stable/.config/ml4w/wallpaper/`
+
+- **Instalar dotfiles**
+
+Após instalar o Hyprland e posteriormente o [ML4W](https://ml4w.com/os/), existirá o diretório `~/.mydotfiles` com as configurações padrão.
+Para instalar o dotfiles sincronizado, deve fazer os passos anteriores **1** e **2** e então fazer o comando:
+
+```bash
+./dotfiles-install.sh
+```
+Este Script cria um backup da configuração atual e então sincroniza a configuração de `~/.dotfiles/ml4w.mydotfiles` para `~/.mydotfiles`
 
 ## Módulos e configurações notáveis
 
