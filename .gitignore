@@ -1,2 +1,9 @@
-*
-!com.ml4w.dotfiles.stable
+# Ignora tudo na raiz
+/*
+
+# Libera o diretório de dotfiles e TODO o seu conteúdo interno
+!com.ml4w.dotfiles.stable/
+!com.ml4w.dotfiles.stable/**
+
+# Ignorar diretório de wallpapers
+com.ml4w.dotfiles.stable/.config/ml4w/wallpaper/

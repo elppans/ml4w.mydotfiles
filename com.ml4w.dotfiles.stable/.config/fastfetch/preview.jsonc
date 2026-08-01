@@ -1,0 +1,133 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/master/doc/json_schema.json",
+  "$gui_config": {
+    "secciones_datos": [
+      {
+        "arbol": false,
+        "color": "32",
+        "color_icono_titulo": "32",
+        "color_valores": "32",
+        "cuadrado": false,
+        "icono_titulo": ">",
+        "modulos": [
+          { "type": "os" },
+          { "type": "host" },
+          { "type": "kernel" },
+          { "type": "cpu" },
+          { "type": "memory", "usar_barra": true },
+          {
+            "custom_text": "Disk /",
+            "folders": "/",
+            "type": "disk",
+            "usar_barra": true
+          },
+          { "type": "localip" },
+          { "type": "publicip" },
+          { "type": "dns" },
+          { "type": "netio" }
+        ],
+        "nombre": "SYSTEM"
+      }
+    ],
+    "ancho_int": 50,
+    "logo_index": 0,
+    "pad_top": 1,
+    "pad_left": 2,
+    "pad_right": 3,
+    "caja_global": true,
+    "color_global": 1,
+    "titulo_global": "MAINFRAME TERMINAL",
+    "alineacion_global": 1,
+    "ruta_imagen": "",
+    "usar_iconos": false,
+    "color_iconos": 5,
+    "barra_lleno": 3,
+    "barra_vacio": 1,
+    "barra_chars": 1,
+    "padding_top_secciones": 0,
+    "padding_secciones": 1
+  },
+  "logo": { "padding": { "top": 1, "left": 2, "right": 3 }, "type": "auto" },
+  "display": {
+    "separator": "  ",
+    "color": { "keys": "white" },
+    "bar": {
+      "char": {
+        "elapsed": "\u001b[0;32m\u2588\u001b[0m",
+        "total": "\u001b[0;90m\u2588\u001b[0m"
+      },
+      "width": 15
+    }
+  },
+  "modules": [
+    {
+      "type": "custom",
+      "format": "\u001b[0;32m\u250c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500 MAINFRAME TERMINAL \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510\u001b[0m",
+    },
+    {
+      "type": "custom",
+      "format": "\u001b[0;32m\u2502 \u001b[0m\u001b[0;32m\u001b[54C\u2502\u001b[55D\u001b[0m \u001b[0;32m> \u001b[0;32mSYSTEM\u001b[0m"
+    },
+    {
+      "type": "os",
+      "key": "\u001b[0;32m\u2502 \u001b[0m\u001b[0;32m\u001b[54C\u2502\u001b[55D\u001b[0m\u001b[0;32m   Os\u001b[0m",
+      "outputColor": "32"
+    },
+    {
+      "type": "host",
+      "key": "\u001b[0;32m\u2502 \u001b[0m\u001b[0;32m\u001b[54C\u2502\u001b[55D\u001b[0m\u001b[0;32m   Host\u001b[0m",
+      "outputColor": "32"
+    },
+    {
+      "type": "kernel",
+      "key": "\u001b[0;32m\u2502 \u001b[0m\u001b[0;32m\u001b[54C\u2502\u001b[55D\u001b[0m\u001b[0;32m   Kernel\u001b[0m",
+      "outputColor": "32"
+    },
+    {
+      "type": "cpu",
+      "key": "\u001b[0;32m\u2502 \u001b[0m\u001b[0;32m\u001b[54C\u2502\u001b[55D\u001b[0m\u001b[0;32m   Cpu\u001b[0m",
+      "outputColor": "32"
+    },
+    {
+      "type": "memory",
+      "key": "\u001b[0;32m\u2502 \u001b[0m\u001b[0;32m\u001b[54C\u2502\u001b[55D\u001b[0m\u001b[0;32m   Memory\u001b[0m",
+      "outputColor": "32",
+      "percent": { "type": 3 }
+    },
+    {
+      "type": "disk",
+      "key": "\u001b[0;32m\u2502 \u001b[0m\u001b[0;32m\u001b[54C\u2502\u001b[55D\u001b[0m\u001b[0;32m   Disk /\u001b[0m",
+      "outputColor": "32",
+      "folders": "/",
+      "percent": { "type": 3 }
+    },
+    {
+      "type": "localip",
+      "key": "\u001b[0;32m\u2502 \u001b[0m\u001b[0;32m\u001b[54C\u2502\u001b[55D\u001b[0m\u001b[0;32m   Localip\u001b[0m",
+      "outputColor": "32"
+    },
+    {
+      "type": "publicip",
+      "key": "\u001b[0;32m\u2502 \u001b[0m\u001b[0;32m\u001b[54C\u2502\u001b[55D\u001b[0m\u001b[0;32m   Publicip\u001b[0m",
+      "outputColor": "32"
+    },
+    {
+      "type": "dns",
+      "key": "\u001b[0;32m\u2502 \u001b[0m\u001b[0;32m\u001b[54C\u2502\u001b[55D\u001b[0m\u001b[0;32m   Dns\u001b[0m",
+      "outputColor": "32"
+    },
+    {
+      "type": "netio",
+      "key": "\u001b[0;32m\u2502 \u001b[0m\u001b[0;32m\u001b[54C\u2502\u001b[55D\u001b[0m\u001b[0;32m   Netio\u001b[0m",
+      "outputColor": "32"
+    },
+    {
+      "type": "custom",
+      "format": "\u001b[0;32m\u2502 \u001b[0m\u001b[0;32m\u001b[54C\u2502\u001b[55D\u001b[0m",
+    },
+    {
+      "type": "custom",
+      "format": "\u001b[0;32m\u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2518\u001b[0m",
+    }
+  ]
+}
