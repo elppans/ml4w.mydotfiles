@@ -17,27 +17,28 @@ Repositório de dotfiles e configurações pessoais usados por @elppans ("ml4w")
 
 ## Como usar (rápido)
 
-1. Clone o repositório:
+1. Crie o subdiretório com o nome .dotfiles em seu `"$HOME"`:
 
 ```bash
-git clone https://github.com/elppans/ml4w.mydotfiles ~/.ml4w.mydotfiles
-cd ~/.ml4w.mydotfiles
+mkdir -p "$HOME/.dotfiles"
+```
+2. Clone o repositório:
+
+```bash
+git clone https://github.com/elppans/ml4w.mydotfiles "$HOME/.dotfiles/ml4w.mydotfiles"
+cd "$HOME/.dotfiles/ml4w.mydotfiles"
 ```
 
-2. Revise os arquivos antes de aplicar. As configurações aqui sobrescrevem arquivos em sua pasta home quando aplicadas.
+3. Revise os arquivos antes de aplicar. As configurações aqui sobrescrevem arquivos em sua pasta home quando aplicadas.
 
-3. Usar o script de sincronização (exemplo):
+4. Usar o script de sincronização (exemplo):
 
 ```bash
-# Torna o script executável e roda em modo de teste
-chmod +x dotfiles-sync.sh
-./dotfiles-sync.sh --dry-run
-
-# Para aplicar (remova --dry-run após revisar)
 ./dotfiles-sync.sh
 ```
 
-O script tenta copiar/ligar arquivos para o local correto (~/.config, ~/, etc.). Leia o cabeçalho do script para entender exatamente o comportamento.
+O Script sincroniza o diretório `~/.mydotfiles` para o repositório git em `~/.dotfiles/ml4w.mydotfiles`.
+>O Script não irá sincronizar o diretório `backup` e nem o diretório `com.ml4w.dotfiles.stable/.config/ml4w/wallpaper/`
 
 ## Módulos e configurações notáveis
 
